@@ -182,7 +182,6 @@
         </div>
     </div>
 </section> --}}
-
     <section class="section-slide">
         <div class="wrap-slick1 rs1-slick1">
             <div class="slick1">
@@ -237,7 +236,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Slide 3 -->
                 <div class="item-slick1" style="background-image: url({{ asset('img/banner1.jpg') }});">
                     <div class="container h-full">
@@ -249,7 +247,7 @@
                             </div>
 
                             <div class="layer-slick1 animated visible-false" data-appear="bounceInRight" data-delay="800">
-                                <h2 class="ltext-104 cl2 p-t-19 p-b-43 respon1">
+                                <h2 class="ltext-104 cl2 p-t-19 p-b-43 respon1" >
                                     Trải Nghiệm Tốc Độ Và Chính Xác
                                 </h2>
                             </div>
@@ -266,7 +264,75 @@
             </div>
         </div>
     </section>
-
+    {{-- <section class="section-slide">
+        <div class="wrap-slick1 rs1-slick1">
+            <div class="slick1">
+                <!-- Slide 1: Chuột Gaming -->
+                <div class="item-slick1 position-relative" style="background-image: url({{ asset('img/banner7.jpg') }}); background-size: cover; background-position: center;">
+                    <div class="gradient-overlay"></div>
+                    <div class="container h-full d-flex justify-content-start align-items-center">
+                        <div class="text-left text-white p-4 rounded shadow-lg bg-opacity-75">
+                            <div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="0">
+                                <span class="ltext-202 fw-bold text-uppercase" style="font-size: 1.5rem;">Trang bị Gaming Cao Cấp</span>
+                            </div>
+                            <div class="layer-slick1 animated visible-false mt-3" data-appear="fadeInUp" data-delay="800">
+                                <h2 class="ltext-104 fw-bold display-4">Chuột Gaming Chính Hãng</h2>
+                            </div>
+                            <div class="layer-slick1 animated visible-false mt-4" data-appear="zoomIn" data-delay="1600">
+                                <a href="{{ route('category.chuotkhongday') }}" 
+                                   class="btn btn-primary btn-lg rounded-pill px-5 py-3 hov-btn">
+                                    Khám Phá Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 2: Màn hình Gaming -->
+                <div class="item-slick1 position-relative" style="background-image: url({{ asset('img/banner5.jpg') }}); background-size: cover; background-position: center;">
+                    <div class="gradient-overlay"></div>
+                    <div class="container h-full d-flex justify-content-center align-items-center">
+                        <div class="text-center text-white p-4 rounded shadow-lg bg-opacity-75">
+                            <div class="layer-slick1 animated visible-false" data-appear="slideInDown" data-delay="0">
+                                <span class="ltext-202 fw-bold text-uppercase" style="font-size: 1.5rem;">Màn Hình Gaming Sắc Nét</span>
+                            </div>
+                            <div class="layer-slick1 animated visible-false mt-3" data-appear="slideInUp" data-delay="800">
+                                <h2 class="ltext-104 fw-bold display-4">Thiết Kế Đỉnh Cao</h2>
+                            </div>
+                            <div class="layer-slick1 animated visible-false mt-4" data-appear="zoomIn" data-delay="1600">
+                                <a href="{{ route('category.manhinh') }}" 
+                                   class="btn btn-warning btn-lg rounded-pill px-5 py-3 hov-btn">
+                                    Xem Chi Tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 3: Bàn phím cơ Gaming -->
+                <div class="item-slick1 position-relative" style="background-image: url({{ asset('img/banner1.jpg') }}); background-size: cover; background-position: center;">
+                    <div class="gradient-overlay"></div>
+                    <div class="container h-full d-flex justify-content-end align-items-center">
+                        <div class="text-right text-white p-4 rounded shadow-lg bg-opacity-75">
+                            <div class="layer-slick1 animated visible-false" data-appear="bounceInLeft" data-delay="0">
+                                <span class="ltext-202 fw-bold text-uppercase" style="font-size: 1.5rem;">Bàn Phím Cơ Gaming</span>
+                            </div>
+                            <div class="layer-slick1 animated visible-false mt-3" data-appear="bounceInRight" data-delay="800">
+                                <h2 class="ltext-104 fw-bold display-4">Trải Nghiệm Tốc Độ Và Chính Xác</h2>
+                            </div>
+                            <div class="layer-slick1 animated visible-false mt-4" data-appear="zoomIn" data-delay="1600">
+                                <a href="{{ route('category.banphimco') }}" 
+                                   class="btn btn-success btn-lg rounded-pill px-5 py-3 hov-btn">
+                                    Tìm Hiểu Ngay
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> --}}
+    
 
     <!-- Banner -->
     <div class="sec-banner bg0">

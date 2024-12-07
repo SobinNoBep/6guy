@@ -197,8 +197,8 @@ class PostController extends Controller
     private function validatePost(Request $request)
     {
         $request->validate([
-            'title' => 'required|string|max:255',
-            'short_description' => 'nullable|string|max:500', // Mô tả ngắn
+            'title' => 'required|string|max:3000',
+            'short_description' => 'nullable|string|max:50000', // Mô tả ngắn
             'content' => 'required',
             'author' => 'required|string|max:255',
             'featured_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',

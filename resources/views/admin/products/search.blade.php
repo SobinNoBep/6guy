@@ -1,4 +1,4 @@
-@extends('layouts')
+@extends('layout')
 
 @section('content')
     {{-- <div class="container">
@@ -75,10 +75,14 @@
             Kết quả tìm kiếm
         </h2>
     </section> --}}
-
+    <section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('{{ asset('img/banner1.jpg') }}');">
+        <h2 class="ltext-105 cl0 txt-center">
+            Kết quả tìm kiếm
+        </h2>
+    </section>	
+    @include('includes.fileproduct')
     <div class="bg0 m-t-23 p-b-140">
         <div class="container">
-
             <div class="row isotope-grid">
                 @foreach ($products as $product)
                     <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item">
@@ -148,5 +152,4 @@
             @endforeach
         </div>
     </div>
-</div>
 @endsection

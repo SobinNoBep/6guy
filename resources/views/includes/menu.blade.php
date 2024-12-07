@@ -279,11 +279,7 @@
                          </a>
                      </li>
 
-                     <li class="p-b-13">
-                         <a href="#" class="stext-102 cl2 hov-cl1 trans-04">
-                            Sản phẩm yêu thích
-                         </a>
-                     </li>
+                  
 
 
                      <!-- Menu đăng nhập/đăng ký và thông tin người dùng -->
@@ -301,6 +297,11 @@
                                          Đơn hàng
                                      </a>
                                  </li>
+                                 <li class="p-b-13">
+                                    <a href="{{ route('wishlist.index') }}" class="stext-102 cl2 hov-cl1 trans-04">
+                                       Sản phẩm yêu thích
+                                    </a>
+                                </li>
                              @else
                                  <li class="p-b-13">
                                      <a href="{{ route('login') }}" class="stext-102 cl2 hov-cl1 trans-04">
@@ -310,11 +311,6 @@
                                  <li class="p-b-13">
                                      <a href="{{ route('register') }}" class="stext-102 cl2 hov-cl1 trans-04">
                                         Đăng ký
-                                     </a>
-                                 </li>
-                                 <li class="p-b-13">
-                                     <a href="{{ route('user.orders.index') }}" class="stext-102 cl2 hov-cl1 trans-04">
-                                        Đơn hàng
                                      </a>
                                  </li>
                              @endauth
@@ -430,7 +426,7 @@
                                         {{ $item['name'] }}
                                     </a>
                                     <span class="header-cart-item-info">
-                                        {{ $item['quantity'] }} x ${{ number_format($item['price']) }}
+                                        {{ $item['quantity'] }} x {{ number_format($item['price']) }}VNĐ
                                     </span>
                                 </div>
                             </li>
@@ -445,9 +441,9 @@
                 <div class="w-full">
                     <div class="header-cart-total w-full p-tb-40">
                         @if (isset($totalPrice) && $totalPrice > 0)
-                            Tổng cộng: ${{ number_format($totalPrice, 2) }}
+                            Tổng cộng: {{ number_format($totalPrice) }}VNĐ
                         @else
-                            Tổng cộng: $0.00
+                            Tổng cộng: 0.00VNĐ
                         @endif
                     </div>
 
