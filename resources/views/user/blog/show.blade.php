@@ -165,196 +165,162 @@
 							</div>
 	
 							<div class="p-t-55">
+								<!-- Danh mục -->
 								<h4 class="mtext-112 cl2 p-b-33">
-									Categories
+									Danh mục
 								</h4>
-	
+					
 								<ul>
 									<li class="bor18">
-										<a href="#" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4">
-											Fashion
+										<a href="{{ route('category.manhinh') }}" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4">
+											Màn hình
 										</a>
 									</li>
-	
+					
 									<li class="bor18">
-										<a href="#" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4">
-											Beauty
+										<a href="{{ route('category.banphimco') }}" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4">
+											Bàn phím
 										</a>
 									</li>
-	
+					
 									<li class="bor18">
-										<a href="#" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4">
-											Street Style
+										<a href="{{ route('category.banhoc') }}" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4">
+											Bàn học
 										</a>
 									</li>
-	
+					
 									<li class="bor18">
-										<a href="#" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4">
-											Life Style
+										<a href="{{ route('category.chuotkhongday') }}" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4">
+											Chuột gaming
 										</a>
 									</li>
-	
-									<li class="bor18">
-										<a href="#" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4">
-											DIY & Crafts
-										</a>
-									</li>
+					
 								</ul>
 							</div>
-	
+					
 							<div class="p-t-65">
+								<!-- Sản phẩm nổi bật -->
 								<h4 class="mtext-112 cl2 p-b-33">
-									Featured Products
+									Sản phẩm nổi bật
 								</h4>
-	
+					
 								<ul>
 									<li class="flex-w flex-t p-b-30">
 										<a href="#" class="wrao-pic-w size-214 hov-ovelay1 m-r-20">
-											<img src="{{asset('images/product-min-01.jpg')}}" alt="PRODUCT">
+											<img src="images/product-min-01.jpg" alt="Sản phẩm">
 										</a>
-	
+					
 										<div class="size-215 flex-col-t p-t-8">
 											<a href="#" class="stext-116 cl8 hov-cl1 trans-04">
-												White Shirt With Pleat Detail Back
+												Áo trắng với chi tiết xếp li ở lưng
 											</a>
-	
+					
 											<span class="stext-116 cl6 p-t-20">
 												$19.00
 											</span>
 										</div>
 									</li>
-
+					
+									<li class="flex-w flex-t p-b-30">
+										<a href="#" class="wrao-pic-w size-214 hov-ovelay1 m-r-20">
+											<img src="{{ asset('images/product-min-02.jpg')}}" alt="Sản phẩm">
+										</a>
+					
+										<div class="size-215 flex-col-t p-t-8">
+											<a href="#" class="stext-116 cl8 hov-cl1 trans-04">
+												Giày Converse All Star Hi Màu đen
+											</a>
+					
+											<span class="stext-116 cl6 p-t-20">
+												$39.00
+											</span>
+										</div>
+									</li>
+					
+									<li class="flex-w flex-t p-b-30">
+										<a href="#" class="wrao-pic-w size-214 hov-ovelay1 m-r-20">
+											<img src="{{ asset('images/product-min-03.jpg')}}" alt="Sản phẩm">
+										</a>
+					
+										<div class="size-215 flex-col-t p-t-8">
+											<a href="#" class="stext-116 cl8 hov-cl1 trans-04">
+												Đồng hồ Nixon Porter bằng da màu nâu
+											</a>
+					
+											<span class="stext-116 cl6 p-t-20">
+												$17.00
+											</span>
+										</div>
+									</li>
 								</ul>
 							</div>
-	
+					
 							<div class="p-t-55">
+								<!-- Lưu trữ -->
 								<h4 class="mtext-112 cl2 p-b-20">
-									Archive
+									Lưu trữ
 								</h4>
-	
+					
 								<ul>
 									<li class="p-b-7">
 										<a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
 											<span>
-												July 2018
+												Tháng 7 năm 2018
 											</span>
-	
+					
 											<span>
 												(9)
 											</span>
 										</a>
 									</li>
-	
+					
 									<li class="p-b-7">
 										<a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
 											<span>
-												June 2018
+												Tháng 6 năm 2018
 											</span>
-	
+					
 											<span>
 												(39)
 											</span>
 										</a>
 									</li>
-	
+					
 									<li class="p-b-7">
 										<a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
 											<span>
-												May 2018
+												Tháng 5 năm 2018
 											</span>
-	
+					
 											<span>
 												(29)
 											</span>
 										</a>
 									</li>
-	
-									<li class="p-b-7">
-										<a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
-											<span>
-												April  2018
-											</span>
-	
-											<span>
-												(35)
-											</span>
-										</a>
-									</li>
-	
-									<li class="p-b-7">
-										<a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
-											<span>
-												March 2018
-											</span>
-	
-											<span>
-												(22)
-											</span>
-										</a>
-									</li>
-	
-									<li class="p-b-7">
-										<a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
-											<span>
-												February 2018
-											</span>
-	
-											<span>
-												(32)
-											</span>
-										</a>
-									</li>
-	
-									<li class="p-b-7">
-										<a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
-											<span>
-												January 2018
-											</span>
-	
-											<span>
-												(21)
-											</span>
-										</a>
-									</li>
-	
-									<li class="p-b-7">
-										<a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
-											<span>
-												December 2017
-											</span>
-	
-											<span>
-												(26)
-											</span>
-										</a>
-									</li>
 								</ul>
 							</div>
-	
+					
 							<div class="p-t-50">
+								<!-- Tags -->
 								<h4 class="mtext-112 cl2 p-b-27">
-									Tags
+									Thẻ Tag
 								</h4>
-	
+							
 								<div class="flex-w m-r--5">
-									<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-										Fashion
+									<a href="{{ route('category.manhinh') }}" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+										Màn hình
 									</a>
-	
-									<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-										Lifestyle
+							
+									<a href="{{ route('category.banphimco') }}" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+										Bàn phím
 									</a>
-	
-									<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-										Denim
+							
+									<a href="{{ route('category.banhoc') }}" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+										Bàn học
 									</a>
-	
-									<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-										Streetstyle
-									</a>
-	
-									<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-										Crafts
+							
+									<a href="{{ route('category.chuotkhongday') }}" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+										Chuột gaming
 									</a>
 								</div>
 							</div>

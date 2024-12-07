@@ -182,78 +182,82 @@
         </div>
     </div>
 </section> --}}
+
     <section class="section-slide">
         <div class="wrap-slick1 rs1-slick1">
             <div class="slick1">
+                <!-- Slide 1 -->
                 <div class="item-slick1" style="background-image: url({{ asset('img/banner7.jpg') }});">
                     <div class="container h-full">
                         <div class="flex-col-l-m h-full p-t-100 p-b-30">
-                            <div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
+                            <div class="layer-slick1 animated visible-false" data-appear="fadeInLeft" data-delay="0">
                                 <span class="ltext-202 cl2 respon2">
-                                    Các thiết bị gaming cực hot
+                                    Trang bị Gaming Cao Cấp
                                 </span>
                             </div>
 
-                            <div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
+                            <div class="layer-slick1 animated visible-false" data-appear="fadeInRight" data-delay="800">
                                 <h2 class="ltext-104 cl2 p-t-19 p-b-43 respon1">
-                                    Chuột Gaimg
+                                    Chuột Gaming Chính Hãng
                                 </h2>
                             </div>
 
                             <div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
-                                <a href="product.html"
+                                <a href="{{ route('category.chuotkhongday') }}"
                                     class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-                                    Xem ngay
+                                    Khám Phá Ngay
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Slide 2 -->
                 <div class="item-slick1" style="background-image: url({{ asset('img/banner5.jpg') }});">
                     <div class="container h-full">
                         <div class="flex-col-l-m h-full p-t-100 p-b-30">
-                            <div class="layer-slick1 animated visible-false" data-appear="rollIn" data-delay="0">
+                            <div class="layer-slick1 animated visible-false" data-appear="slideInDown" data-delay="0">
                                 <span class="ltext-202 cl2 respon2">
-                                    Thiết kế đẹp mắt
+                                    Màn Hình Gaming Sắc Nét
                                 </span>
                             </div>
 
-                            <div class="layer-slick1 animated visible-false" data-appear="lightSpeedIn" data-delay="800">
+                            <div class="layer-slick1 animated visible-false" data-appear="slideInUp" data-delay="800">
                                 <h2 class="ltext-104 cl2 p-t-19 p-b-43 respon1">
-                                    Màn hình và bàn gaming
+                                    Thiết Kế Đỉnh Cao
                                 </h2>
                             </div>
 
-                            <div class="layer-slick1 animated visible-false" data-appear="slideInUp" data-delay="1600">
-                                <a href="product.html"
+                            <div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
+                                <a href="{{ route('category.manhinh') }}"
                                     class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-                                    Xem ngay
+                                    Xem Chi Tiết
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Slide 3 -->
                 <div class="item-slick1" style="background-image: url({{ asset('img/banner1.jpg') }});">
                     <div class="container h-full">
                         <div class="flex-col-l-m h-full p-t-100 p-b-30">
-                            <div class="layer-slick1 animated visible-false" data-appear="rotateInDownLeft" data-delay="0">
+                            <div class="layer-slick1 animated visible-false" data-appear="bounceInLeft" data-delay="0">
                                 <span class="ltext-202 cl2 respon2">
-                                    Bàn phím cơ cực chất
+                                    Bàn Phím Cơ Gaming
                                 </span>
                             </div>
 
-                            <div class="layer-slick1 animated visible-false" data-appear="rotateInUpRight" data-delay="800">
+                            <div class="layer-slick1 animated visible-false" data-appear="bounceInRight" data-delay="800">
                                 <h2 class="ltext-104 cl2 p-t-19 p-b-43 respon1">
-                                    Bàn phím gaming
+                                    Trải Nghiệm Tốc Độ Và Chính Xác
                                 </h2>
                             </div>
 
-                            <div class="layer-slick1 animated visible-false" data-appear="rotateIn" data-delay="1600">
-                                <a href="product.html"
+                            <div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
+                                <a href="{{ route('category.banphimco') }}"
                                     class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-                                    Xem ngay
+                                    Tìm Hiểu Ngay
                                 </a>
                             </div>
                         </div>
@@ -262,6 +266,8 @@
             </div>
         </div>
     </section>
+
+
     <!-- Banner -->
     <div class="sec-banner bg0">
         <div class="flex-w flex-c-m">
@@ -437,19 +443,7 @@
                                                             </span>
                                                         @endif
                                                     </div>
-
                                                     <!-- Nút yêu thích -->
-                                                    <div class="block2-txt-child2 flex-r p-t-3">
-                                                        <a href="#"
-                                                            class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-                                                            <img class="icon-heart1 dis-block trans-04"
-                                                                src="{{ asset('images/icons/icon-heart-01.png') }}"
-                                                                alt="ICON">
-                                                            <img class="icon-heart2 dis-block trans-04 ab-t-l"
-                                                                src="{{ asset('images/icons/icon-heart-02.png') }}"
-                                                                alt="ICON">
-                                                        </a>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -573,96 +567,41 @@
                         </div>
                     </div>
                 </div>
-
+                {{-- @foreach ($posts as $post)
                 <div class="col-sm-6 col-md-4 p-b-40">
                     <div class="blog-item">
                         <div class="hov-img0">
-                            <a href="blog-detail.html">
-                                <img src="images/blog-02.jpg" alt="IMG-BLOG">
+                            <a href="{{ route('blog.show', $post->id) }}">
+                                <img src="{{ asset('storage/' . $post->featured_image) }}" alt="IMG-BLOG">
                             </a>
                         </div>
-
+    
                         <div class="p-t-15">
                             <div class="stext-107 flex-w p-b-14">
                                 <span class="m-r-3">
-                                    <span class="cl4">
-                                        By
-                                    </span>
-
-                                    <span class="cl5">
-                                        Nancy Ward
-                                    </span>
+                                    <span class="cl4">By</span>
+                                    <span class="cl5">{{ $post->author }}</span>
                                 </span>
-
+    
                                 <span>
-                                    <span class="cl4">
-                                        on
-                                    </span>
-
-                                    <span class="cl5">
-                                        July 18, 2017
-                                    </span>
+                                    <span class="cl4">on</span>
+                                    <span class="cl5">{{ $post->created_at->format('F d, Y') }}</span>
                                 </span>
                             </div>
-
+    
                             <h4 class="p-b-12">
-                                <a href="blog-detail.html" class="mtext-101 cl2 hov-cl1 trans-04">
-                                    The Great Big List of Men’s Gifts for the Holidays
+                                <a href="{{ route('blog.show', $post->id) }}" class="mtext-101 cl2 hov-cl1 trans-04">
+                                    {{ $post->title }}
                                 </a>
                             </h4>
-
+    
                             <p class="stext-108 cl6">
-                                Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla
-                                in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit ame
+                                {{ Str::limit($post->content, 100) }}
                             </p>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-sm-6 col-md-4 p-b-40">
-                    <div class="blog-item">
-                        <div class="hov-img0">
-                            <a href="blog-detail.html">
-                                <img src="images/blog-03.jpg" alt="IMG-BLOG">
-                            </a>
-                        </div>
-
-                        <div class="p-t-15">
-                            <div class="stext-107 flex-w p-b-14">
-                                <span class="m-r-3">
-                                    <span class="cl4">
-                                        By
-                                    </span>
-
-                                    <span class="cl5">
-                                        Nancy Ward
-                                    </span>
-                                </span>
-
-                                <span>
-                                    <span class="cl4">
-                                        on
-                                    </span>
-
-                                    <span class="cl5">
-                                        July 2, 2017
-                                    </span>
-                                </span>
-                            </div>
-
-                            <h4 class="p-b-12">
-                                <a href="blog-detail.html" class="mtext-101 cl2 hov-cl1 trans-04">
-                                    5 Winter-to-Spring Fashion Trends to Try Now
-                                </a>
-                            </h4>
-
-                            <p class="stext-108 cl6">
-                                Proin nec vehicula lorem, a efficitur ex. Nam vehicula nulla vel erat tincidunt, sed
-                                hendrerit ligula porttitor. Fusce sit amet maximus nunc
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            @endforeach --}}
             </div>
         </div>
     </section>

@@ -17,6 +17,14 @@ use App\Http\Controllers\VNPayController;
 use App\Http\Controllers\Admin\CouponController;
 
 
+use App\Http\Controllers\WishlistController;
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/wishlist', [WishlistController::class, 'index'])->name('wishlist.index');
+    Route::post('/wishlist/{productId}', [WishlistController::class, 'store'])->name('wishlist.store');
+    Route::delete('/wishlist/{id}', [WishlistController::class, 'destroy'])->name('wishlist.destroy');
+});
+
 Route::prefix('admin')->group(function () {
     Route::get('/posts', [PostController::class, 'index'])->name('admin.blog.index'); // Hiển thị danh sách bài viết
     Route::get('/posts/create', [PostController::class, 'create'])->name('admin.blog.add'); // Form tạo bài viết mới
@@ -28,7 +36,8 @@ Route::prefix('admin')->group(function () {
 
 Route::get('/blog/{post}', [PostController::class, 'show'])->name('user.blog.show');
 Route::get('/blog', [PostController::class, 'list'])->name('user.blog.index');
-
+// routes/web.php
+Route::get('/', [HomeController::class, 'home'])->name('index');
 
 
 Route::get('/welcome', function () {
@@ -92,9 +101,9 @@ Route::delete('/admin/user/{id}', [usersCcontroller::class, 'destroy'])->name('a
 Route::get('/admin/user/edit/{id}', [usersCcontroller::class, 'edit'])->name('admin.user.edit');
 Route::put('/admin/user/update/{id}', [usersCcontroller::class, 'update'])->name('admin.user.update');
 
-Route::get('/', [HomeController::class, 'index'])->name('index');
-Route::get('/products/all', [HomeController::class, 'showAll'])->name('products.showall');
 
+Route::get('/products/all', [HomeController::class, 'showAll'])->name('products.showall');
+Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/checkout/confirm', [CheckoutController::class, 'showConfirmCheckout'])->name('user.checkout.confirm');
 Route::get('/checkout', [CheckoutController::class, 'showCheckoutForm'])->name('user.checkout');
 Route::post('/checkout/process', [CheckoutController::class, 'processCheckout'])->name('user.checkout.process');
